@@ -11,8 +11,8 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 model = None
 
-with open('kirin.pkl', 'rb') as f:
-    model = pickle.load(f)
+# load your model with whatever you want.
+# even torch.load()
 
 kirin = model.to(device)
 
